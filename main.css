@@ -1,0 +1,21 @@
+:root{
+    --background-color: #292b2c;
+    --font-color: #F8F9FA;
+}
+
+:root.dark {
+           --font-color : #292b2c ;
+           --background-color : #F8F9FA ;
+}
+
+@media screen and ( prefers-color-scheme : dark ) {
+    :root {
+        --font-color : #292b2c ;
+        --background-color : #F8F9FA ;
+    }
+}
+
+body{
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
